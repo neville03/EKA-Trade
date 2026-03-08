@@ -1,73 +1,81 @@
-# Welcome to your Lovable project
+# EKA
 
-## Project info
+> Premium Accessories Marketplace — live at [eka.com](https://www.eka.com)
 
-**URL**: https://lovable.dev/projects/f853cd80-eb5c-4f8f-8b84-b95ca7d7ace4
+---
 
-## How can I edit this code?
+## Overview
 
-There are several ways of editing your application.
+**EKA** is an experimental full-stack e-commerce platform specialising in premium accessories. The platform delivers a seamless shopping experience with a modern, responsive interface and a robust backend for product and order management.
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f853cd80-eb5c-4f8f-8b84-b95ca7d7ace4) and start prompting.
+- 🛍️ Product catalogue with browsing and filtering
+- 🛒 Shopping cart and streamlined checkout flow
+- 👤 User authentication and account management
+- 📦 Order tracking and history
+- 🔒 Secure data handling via Supabase
+- 📱 Fully responsive across mobile, tablet, and desktop
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech Stack
 
-**Use your preferred IDE**
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React + Vite |
+| Styling | Tailwind CSS |
+| Backend | Supabase |
+| Database | MySQL |
+| Deployment | *(e.g. Vercel, Netlify — update as needed)* |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone the repository
+git clone https://github.com/neville04/eka.git
+cd eka
 
-Follow these steps:
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Environment Variables
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Create a `.env` file in the root of the project:
 
-**Use GitHub Codespaces**
+```env
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+> Never commit your `.env` file. Ensure it is listed in `.gitignore`.
 
-## What technologies are used for this project?
+## Project Structure
 
-This project is built with:
+```
+eka/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── lib/
+│   └── main.jsx
+├── .env
+├── index.html
+├── tailwind.config.js
+└── vite.config.js
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Deployment
 
-## How can I deploy this project?
+*(Update with live URL once deployed)*
 
-Simply open [Lovable](https://lovable.dev/projects/f853cd80-eb5c-4f8f-8b84-b95ca7d7ace4) and click on Share -> Publish.
+## Notes
 
-## Can I connect a custom domain to my Lovable project?
+This is an experimental platform — features and architecture are subject to change as the project evolves.
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+*Developed by [Neville](https://github.com/neville04)*
